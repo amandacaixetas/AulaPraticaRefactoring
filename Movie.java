@@ -6,10 +6,12 @@ public class Movie {
 
   private String _title;
   private int _priceCode;
+  private int frequentRenterPoints;
 
-  public Movie(String title, int priceCode) {
+  public Movie(String title, int priceCode, int frequentRenterPoints) {
       _title = title;
       _priceCode = priceCode;
+      this.frequentRenterPoints = frequentRenterPoints;
   }
 
   public int getPriceCode() {
@@ -44,6 +46,13 @@ public class Movie {
 		}
 		
 		return thisAmount;
+  }
+  
+  public int getFrequentRenterPoints(int daysRented){
+      //Adicionar o trecho de código extraído.
+	   // add frequent renter points
+	   this.frequentRenterPoints ++;
+	   return frequentRenterPoints;
   }
   
 }

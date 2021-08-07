@@ -2,12 +2,10 @@ public class Rental {
 
    private Movie _movie;
    private int _daysRented;
-   private int frequentRenterPoints;
 
-   public Rental(Movie movie, int daysRented, int frequentRenterPoints) {
+   public Rental(Movie movie, int daysRented) {
       _movie = movie;
       _daysRented = daysRented;
-      this.frequentRenterPoints = frequentRenterPoints;
    }
 
    public int getDaysRented() {
@@ -22,11 +20,9 @@ public class Rental {
       return _movie.getCharge(_daysRented);
    }
    
+   public int getFrequentRenterPoints(){
+	   return _movie.getFrequentRenterPoints(_daysRented);
+   }
    
-   public int getFrequentRenterPoints() {
-	   // add frequent renter points
-	   this.frequentRenterPoints ++;
-	   return frequentRenterPoints;
-	}
    
 }
