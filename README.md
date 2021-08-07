@@ -1,1 +1,1 @@
-# AulaPraticaRefactoring
+Projeto de Refactoring da aula ´pática de Engenharia de Software.
